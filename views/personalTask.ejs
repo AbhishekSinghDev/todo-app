@@ -1,0 +1,30 @@
+<%- include("partials/header.ejs") %>
+
+<div class="search">
+        <% if(locals.title) { %>
+            <h3 class="search-title"> <%= title %> </h3>
+        <% } else { %>
+            <h3 class="search-title"> Create Task </h3>
+        <% } %>
+    <form action="/add-personal" method="post">
+        <input type="search" name="task" id="search_device_value" class="value" placeholder="Create Task" !important autocomplete="off">
+        <input type="submit" value="Add" class="btn">
+    </form>
+</div>
+<div class="task-list">
+    <ul>
+        <% if(locals.taskList) { %>
+            <% for(let i=0; i<taskList.length; i++) { %>
+                <li class="list-item">
+                    <div class="left">
+                        <form action="/delete-personal" method="post">
+                            <input type="checkbox" name="checkbox" onchange="this.form.submit()" value="<%= taskList[i]._id %>"> 
+                            <%= taskList[i].name %> 
+                        </form>
+                    </div>
+                </li>
+            <% } %>
+        <% } %>
+    </ul>
+</div>
+<%- include("partials/footer.ejs") %>

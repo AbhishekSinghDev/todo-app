@@ -1,0 +1,127 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    background: url("../images/bg.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    background: #69949f;
+    border-radius: 6px;
+}
+
+.logo {
+    color: white;
+    font-size: 1.4em;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+}
+.nav-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    /* border: 1px red solid; */
+}
+.nav-links {
+    list-style-type: none;
+}
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav-links li a {
+    transition: all 0.4s ease-in-out 0s;
+}
+.nav-links li a:hover {
+    color: #2a008d;
+}
+button {
+    font-size: 16px;
+    padding: 8px 25px;
+    background-color: #dab618;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in 0s;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* SEARCH PART  */
+.search {
+    /* border: 1px solid red; */
+    padding: 4% 10%;
+}
+.search-title {
+    font-size: 3em;
+    color: white;
+    margin: 0px;
+}
+.value {
+    height: 50px;
+    width: 400px;
+    padding: 0px 20px;
+    font-size: 20px;
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 30px;
+}
+
+/* SUBMIT BUTTON */
+.btn {
+    margin-left: 1.5em;
+    padding: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid white;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* TASK BRICK */
+.task-list {
+    margin-right: 200px;
+    margin-left: 200px;
+    /* border: 2px solid red; */
+}
+.task-list ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-item {
+    padding: 20px;
+    border: 1px solid white;
+    color: white;
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.strike-task {
+    text-decoration: line-through;
+}

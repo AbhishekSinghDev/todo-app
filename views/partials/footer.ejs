@@ -1,0 +1,16 @@
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+    
+    
+
+    const box = document.querySelectorAll("input[type='checkbox']");
+
+    box.forEach(checkbox => checkbox.addEventListener("click", (e) => {
+        console.log(e);
+        e.style.textDecoration = "line-through";
+    }));
+
+</script>
+</body>
+</html>
